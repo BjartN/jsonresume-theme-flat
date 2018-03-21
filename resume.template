@@ -130,7 +130,12 @@
 				<h4 class="strike-through">
 					<span>{{company}}</span>
 					<span class="date">
-						{{startDate}} — {{endDate}}
+						{{#month}}{{startDate}}{{/month}}
+					{{#if endDate}}
+						- {{#month}}{{endDate}}{{/month}}
+					{{else}}
+					  - Present
+					{{/if}}
 					</span>
 				</h4>
 				{{#website}}
@@ -175,7 +180,12 @@
 				<h4 class="strike-through">
 					<span>{{organization}}</span>
 					<span class="date">
-						{{startDate}} — {{endDate}}
+						{{#month}}{{startDate}}{{/month}}
+					{{#if endDate}}
+						- {{#month}}{{endDate}}{{/month}}
+					{{else}}
+					  - Present
+					{{/if}}
 					</span>
 				</h4>
 				{{#website}}
@@ -220,7 +230,12 @@
 				<h4 class="strike-through">
 					<span>{{institution}}</span>
 					<span class="date">
-						{{startDate}} — {{endDate}}
+						{{#month}}{{startDate}}{{/month}}
+					{{#if endDate}}
+						- {{#month}}{{endDate}}{{/month}}
+					{{else}}
+					  - Present
+					{{/if}}
 					</span>
 				</h4>
 				{{#area}}
@@ -296,7 +311,7 @@
 				<h4 class="strike-through">
 					<span>{{name}}</span>
 					<span class="date">
-						{{releaseDate}}
+						{{#month}}{{releaseDate}}{{/month}}
 					</span>
 				</h4>
 				{{#website}}

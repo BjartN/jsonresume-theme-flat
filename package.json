@@ -11,6 +11,7 @@
     "start": "resume serve"
   },
   "dependencies": {
+    "date-fns": "^1.29.0",
     "handlebars": "^2.0.0-alpha.4"
   },
   "license": "MIT"
